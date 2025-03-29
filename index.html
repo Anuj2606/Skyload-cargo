@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skyload: Optimize Your Cargo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Skyload: Optimize Your Cargo</h1>
+    <div class="greeting">
+      <p>Welcome to Skyload! Let us help you optimize your cargo load for your flights. Just enter the details below and get started!</p>
+    </div>
+    <form id="cargoForm">
+      <label for="numItems">Number of Items:</label>
+      <input type="number" id="numItems" min="1" required>
+
+      <div id="itemInputs"></div>
+
+      <label for="capacity">Cargo Capacity:</label>
+      <input type="number" id="capacity" step="0.01" required>
+
+      <button type="submit">Calculate</button>
+    </form>
+
+    <div class="results" id="results" style="display: none;">
+      <h3>Results</h3>
+      <div id="resultItems"></div>
+      <div id="totals"></div>
+    </div>
+  </div>
+
+  <script src="cargo.js"></script>
+</body>
+</html>
